@@ -62,18 +62,18 @@ export function MascotShowcase() {
   const current = discoveryGuides[activeTab];
 
   return (
-    <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] relative overflow-hidden border-b border-[#DFE3DF]">
-      <Container size="wide">
-        <div className="bg-white rounded-3xl border border-[#DFE3DF] p-6 sm:p-10 lg:p-14 shadow-xl relative overflow-hidden">
+      <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] relative overflow-hidden border-b border-[#DFE3DF]">
+        <Container size="wide">
+          <div className="bg-white rounded-3xl border border-[#DFE3DF] p-6 sm:p-10 lg:p-14 shadow-xl relative overflow-hidden">
 
-          {/* Subtle background branding */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#00504A]/5 rounded-full blur-3xl pointer-events-none" />
+            {/* Subtle background branding */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#00504A]/5 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 
-            {/* Left: Mascot Art Direction with Subtle Floating Movement */}
-            <div className="lg:col-span-5 relative flex flex-col items-center">
-              <Reveal direction="up" duration={0.8}>
+              {/* Left: Mascot Art Direction with Subtle Floating Movement */}
+              <div className="lg:col-span-5 relative flex flex-col items-center">
+                <Reveal direction="up" duration={0.8}>
                   <div
                     className="relative w-64 sm:w-80 md:w-96 aspect-1024/682 mx-auto drop-shadow-2xl transition-transform duration-500 hover:scale-103"
                     style={{ position: "relative" }}
@@ -86,119 +86,119 @@ export function MascotShowcase() {
                       sizes="(max-width: 640px) 256px, 384px"
                     />
                   </div>
-              </Reveal>
+                </Reveal>
 
-              {/* Speech bubble / Mascot advice banner with entrance */}
-              <Reveal delay={0.2}>
-                <div className="mt-4 p-4 rounded-xl bg-[#00504A] text-white text-xs max-w-sm text-center shadow-lg border border-white/20 transition-transform duration-300 hover:-translate-y-1">
-                  <span className="font-bold text-[#C87535] uppercase tracking-wider block mb-1">
-                    LIVORA On-Site Wisdom
-                  </span>
-                  <p className="text-white/90">
-                    &ldquo;A great tile or stone slab is only as durable as the chemical bond beneath it. Match the formulation to the substrate!&rdquo;
-                  </p>
-                </div>
-              </Reveal>
-            </div>
-
-            {/* Right: Interactive Product Discovery Guidance */}
-            <div className="lg:col-span-7 space-y-6">
-              <div>
-                <Reveal>
-                  <div className="inline-flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#00504A]">
-                    <HelpCircle className="w-4 h-4 text-[#C87535]" />
-                    Product Selection Guidance
+                {/* Speech bubble / Mascot advice banner with entrance */}
+                <Reveal delay={0.2}>
+                  <div className="mt-4 p-4 rounded-xl bg-[#00504A] text-white text-xs max-w-sm text-center shadow-lg border border-white/20 transition-transform duration-300 hover:-translate-y-1">
+                    <span className="font-bold text-[#C87535] uppercase tracking-wider block mb-1">
+                      LIVORA On-Site Wisdom
+                    </span>
+                    <p className="text-white/90">
+                      &ldquo;A great tile or stone slab is only as durable as the chemical bond beneath it. Match the formulation to the substrate!&rdquo;
+                    </p>
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-[#1D2322] leading-tight">
-                    The Right Chemistry for the Right Application.
-                  </h2>
-                  <p className="mt-3 text-sm sm:text-base text-[#5A6361] leading-relaxed">
-                    Every building substrate and tile material behaves differently. LIVORA helps architects, engineers, and applicators select appropriate grades based on project parameters rather than generic guesswork.
-                  </p>
                 </Reveal>
               </div>
 
-              {/* Selector Tabs */}
-              <Reveal delay={0.15}>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {[
-                    { key: "tile", label: "Tile Adhesives" },
-                    { key: "waterproof", label: "Waterproofing" },
-                    { key: "epoxy", label: "Tile Epoxy" },
-                    { key: "stone", label: "Stone & Marble" },
-                  ].map((tab) => (
-                    <button
-                      key={tab.key}
-                      type="button"
-                      onClick={() => setActiveTab(tab.key as any)}
-                      className={`px-4 py-2 rounded-xs text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeTab === tab.key
-                        ? "bg-[#00504A] text-white shadow-sm scale-102"
-                        : "bg-[#F6F7F4] text-[#1D2322] hover:bg-[#EAECE8] border border-[#DFE3DF]"
-                        }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ))}
+              {/* Right: Interactive Product Discovery Guidance */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <Reveal>
+                    <div className="inline-flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#00504A]">
+                      <HelpCircle className="w-4 h-4 text-[#C87535]" />
+                      Product Selection Guidance
+                    </div>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#1D2322] leading-tight">
+                      The Right Chemistry for the Right Application.
+                    </h2>
+                    <p className="mt-3 text-sm sm:text-base text-[#5A6361] leading-relaxed">
+                      Every building substrate and tile material behaves differently. LIVORA helps architects, engineers, and applicators select appropriate grades based on project parameters rather than generic guesswork.
+                    </p>
+                  </Reveal>
                 </div>
-              </Reveal>
 
-              {/* Dynamic Discovery Box with Animated Transitions */}
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeTab}
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="p-6 rounded-2xl bg-[#F6F7F4] border border-[#DFE3DF] space-y-4 shadow-sm"
-                >
-                  <div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#C87535]">
-                      {current.title} Consideration
-                    </span>
-                    <h3 className="text-lg font-bold text-[#1D2322] mt-0.5">
-                      {current.question}
-                    </h3>
+                {/* Selector Tabs */}
+                <Reveal delay={0.15}>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {[
+                      { key: "tile", label: "Tile Adhesives" },
+                      { key: "waterproof", label: "Waterproofing" },
+                      { key: "epoxy", label: "Tile Epoxy" },
+                      { key: "stone", label: "Stone & Marble" },
+                    ].map((tab) => (
+                      <button
+                        key={tab.key}
+                        type="button"
+                        onClick={() => setActiveTab(tab.key as any)}
+                        className={`px-4 py-2 rounded-xs text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeTab === tab.key
+                          ? "bg-[#00504A] text-white shadow-sm scale-102"
+                          : "bg-[#F6F7F4] text-[#1D2322] hover:bg-[#EAECE8] border border-[#DFE3DF]"
+                          }`}
+                      >
+                        {tab.label}
+                      </button>
+                    ))}
                   </div>
+                </Reveal>
 
-                  <div className="space-y-2">
-                    <div className="text-xs font-semibold uppercase tracking-wider text-[#5A6361]">
-                      Key Technical Factors:
+                {/* Dynamic Discovery Box with Animated Transitions */}
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activeTab}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className="p-6 rounded-2xl bg-[#F6F7F4] border border-[#DFE3DF] space-y-4 shadow-sm"
+                  >
+                    <div>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#C87535]">
+                        {current.title} Consideration
+                      </span>
+                      <h3 className="text-lg font-bold text-[#1D2322] mt-0.5">
+                        {current.question}
+                      </h3>
                     </div>
-                    <ul className="space-y-1.5 text-xs sm:text-sm text-[#1D2322]">
-                      {current.factors.map((factor) => (
-                        <li key={factor} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-[#00504A] shrink-0 mt-0.5" />
-                          <span>{factor}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
 
-                  <div className="pt-3 border-t border-[#DFE3DF] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="text-xs text-[#5A6361]">
-                      <span className="font-semibold text-[#1D2322]">Technical Approach: </span>
-                      {current.recommendation}
+                    <div className="space-y-2">
+                      <div className="text-xs font-semibold uppercase tracking-wider text-[#5A6361]">
+                        Key Technical Factors:
+                      </div>
+                      <ul className="space-y-1.5 text-xs sm:text-sm text-[#1D2322]">
+                        {current.factors.map((factor) => (
+                          <li key={factor} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-4 h-4 text-[#00504A] shrink-0 mt-0.5" />
+                            <span>{factor}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <Button
-                      href={`/products/${current.slug}`}
-                      variant="primary"
-                      size="sm"
-                      className="shrink-0"
-                    >
-                      <span>Find Your Solution</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </Button>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+
+                    <div className="pt-3 border-t border-[#DFE3DF] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                      <div className="text-xs text-[#5A6361]">
+                        <span className="font-semibold text-[#1D2322]">Technical Approach: </span>
+                        {current.recommendation}
+                      </div>
+                      <Button
+                        href={`/products/${current.slug}`}
+                        variant="primary"
+                        size="sm"
+                        className="shrink-0"
+                      >
+                        <span>Find Your Solution</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Button>
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
+
+              </div>
 
             </div>
 
           </div>
-
-        </div>
-      </Container>
-    </section>
-  );
+        </Container>
+      </section>
+      );
 }

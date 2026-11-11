@@ -9,37 +9,37 @@ import { ArrowRight, Check } from "lucide-react";
 
 export function ProductShowcase() {
   return (
-    <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] relative">
-      <Container size="wide">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
-          <SectionHeading
-            eyebrow="Core Portfolios"
-            title="Solutions Built Around Every Application."
-            description="Four specialised chemical divisions addressing surface preparation, moisture protection, tile bonding, and architectural natural stone finishes."
-          />
-          <TextReveal delay={0.2}>
-            <Link
-              href="/products"
-              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#00504A] hover:text-[#003C3A] transition-colors shrink-0 group py-1"
-            >
-              <span>View Full Directory</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </TextReveal>
-        </div>
-
-        {/* 4 Editorial Product Division Cards with Scroll Animation */}
-        <StaggerContainer
-          staggerDelay={0.12}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
-        >
-          {productCategories.map((cat, index) => (
-            <StaggerItem key={cat.slug} hoverLift={true} className="h-full">
+      <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] relative">
+        <Container size="wide">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
+            <SectionHeading
+              eyebrow="Core Portfolios"
+              title="Solutions Built Around Every Application."
+              description="Four specialised chemical divisions addressing surface preparation, moisture protection, tile bonding, and architectural natural stone finishes."
+            />
+            <TextReveal delay={0.2}>
               <Link
-                href={`/products/${cat.slug}`}
-                className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-[#DFE3DF] hover:border-[#00504A] shadow-xs hover:shadow-2xl transition-all duration-300 relative"
+                href="/products"
+                className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#00504A] hover:text-[#003C3A] transition-colors shrink-0 group py-1"
               >
-                {/* Visual Image Header */}
+                <span>View Full Directory</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </TextReveal>
+          </div>
+
+          {/* 4 Editorial Product Division Cards with Scroll Animation */}
+          <StaggerContainer
+            staggerDelay={0.12}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+          >
+            {productCategories.map((cat, index) => (
+              <StaggerItem key={cat.slug} hoverLift={true} className="h-full">
+                <Link
+                  href={`/products/${cat.slug}`}
+                  className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-[#DFE3DF] hover:border-[#00504A] shadow-xs hover:shadow-2xl transition-all duration-300 relative"
+                >
+                  {/* Visual Image Header */}
                   <div
                     className="relative aspect-4/3 w-full overflow-hidden bg-[#EAECE8]"
                     style={{ position: "relative" }}
@@ -129,11 +129,11 @@ export function ProductShowcase() {
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-200" />
                     </div>
                   </div>
-              </Link>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
-      </Container>
-    </section >
-  );
+                </Link>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </Container>
+      </section >
+      );
 }

@@ -100,33 +100,33 @@ export function SectionHeading({
             )}
           />
         </motion.div>
-  )
-}
-  <motion.h2
+      )
+      }
+      <motion.h2
         initial={{ opacity: 0, y: 16 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-  className={cn(
-    "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.12]",
-    isDark ? "text-white" : "text-[#1D2322]"
-  )}
->
-  {title}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+        className={cn(
+          "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.12]",
+          isDark ? "text-white" : "text-[#1D2322]"
+        )}
+      >
+        {title}
       </motion.h2 >
-  { description && (
-      <motion.p
+      {description && (
+        <motion.p
           initial={{ opacity: 0, y: 12 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.55, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
-      className={cn(
-        "mt-4 text-base sm:text-lg leading-relaxed font-normal",
-        isDark ? "text-white/80" : "text-[#5A6361]",
-        isCenter && "max-w-2xl mx-auto"
-      )}
-    >
-      {description}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.55, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
+          className={cn(
+            "mt-4 text-base sm:text-lg leading-relaxed font-normal",
+            isDark ? "text-white/80" : "text-[#5A6361]",
+            isCenter && "max-w-2xl mx-auto"
+          )}
+        >
+          {description}
         </motion.p >
       )}
     </motion.div >

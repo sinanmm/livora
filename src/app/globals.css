@@ -73,7 +73,8 @@ h6 {
 }
 
 /* Lenis Smooth Scroll Core Styles */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
