@@ -67,6 +67,7 @@ export function InstagramSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative aspect-square rounded-2xl overflow-hidden block bg-[#EAECE8] border border-[#DFE3DF] shadow-xs hover:shadow-2xl transition-all duration-300"
+                style={{ position: "relative" }}
               >
                 <Image
                   src={visual.src}

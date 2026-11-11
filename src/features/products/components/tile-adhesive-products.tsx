@@ -82,7 +82,10 @@ export function TileAdhesiveProducts() {
                     </div>
 
                     {/* Packaging Visual */}
-                      <div className="relative h-64 sm:h-72 w-full max-w-[240px] mx-auto my-3 flex items-center justify-center rounded-2xl overflow-hidden bg-white/70 p-2 shadow-xs border border-[#DFE3DF]/70">
+                      <div
+                        className="relative h-64 sm:h-72 w-full max-w-[240px] mx-auto my-3 flex items-center justify-center rounded-2xl overflow-hidden bg-white/70 p-2 shadow-xs border border-[#DFE3DF]/70"
+                        style={{ position: "relative" }}
+                      >
                         <Image
                           src={product.packagingImage}
                           alt={`${product.name} Packaging Bag`}

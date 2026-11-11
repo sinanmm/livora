@@ -119,7 +119,10 @@ export function Hero() {
               className="relative mx-auto max-w-md lg:max-w-none"
             >
               {/* Architectural Backdrop Frame */}
-              <div className="relative aspect-4/3 sm:aspect-1/1 w-full rounded-2xl overflow-hidden shadow-2xl border-2 border-white bg-[#EAECE8]">
+              <div
+                className="relative aspect-4/3 sm:aspect-1/1 w-full rounded-2xl overflow-hidden shadow-2xl border-2 border-white bg-[#EAECE8]"
+                style={{ position: "relative" }}
+              >
                 <Image
                   src="/images/architecture/hero-bg.jpg"
                   alt="LIVORA Architectural Material Pavilion"
@@ -158,7 +161,7 @@ export function Hero() {
                 transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute -bottom-6 -left-6 sm:-bottom-10 sm:-left-10 w-64 sm:w-80 md:w-96 z-20 pointer-events-none drop-shadow-2xl"
               >
-                <div className="relative aspect-1024/682 w-full">
+                <div className="relative aspect-1024/682 w-full" style={{ position: "relative" }}>
                   <Image
                     src="/images/mascot/mascot-transparent.webp"
                     alt="LIVORA Chemicals Bull Mascot"

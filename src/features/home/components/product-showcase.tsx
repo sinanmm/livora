@@ -40,7 +40,10 @@ export function ProductShowcase() {
                 className="group flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-[#DFE3DF] hover:border-[#00504A] shadow-xs hover:shadow-2xl transition-all duration-300 relative"
               >
                 {/* Visual Image Header */}
-                <div className="relative aspect-4/3 w-full overflow-hidden bg-[#EAECE8]">
+                <div
+                  className="relative aspect-4/3 w-full overflow-hidden bg-[#EAECE8]"
+                  style={{ position: "relative" }}
+                >
                   <Image
                     src={cat.heroImage}
                     alt={cat.name}

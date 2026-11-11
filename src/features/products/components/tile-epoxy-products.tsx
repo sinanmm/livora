@@ -85,7 +85,10 @@ export function TileEpoxyProducts() {
                   </div>
 
                   {/* 3D Bucket Image */}
-                  <div className="relative h-64 sm:h-72 w-full mx-auto my-2 flex items-center justify-center">
+                  <div
+                    className="relative h-64 sm:h-72 w-full mx-auto my-2 flex items-center justify-center"
+                    style={{ position: "relative" }}
+                  >
                     <Image
                       src={product.packagingImage}
                       alt={`${product.name} Packaging Bucket`}

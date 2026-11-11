@@ -74,7 +74,10 @@ export function MascotShowcase() {
             {/* Left: Mascot Art Direction with Subtle Floating Movement */}
             <div className="lg:col-span-5 relative flex flex-col items-center">
                   <Reveal direction="up" duration={0.8}>
-                    <div className="relative w-64 sm:w-80 md:w-96 aspect-1024/682 mx-auto drop-shadow-2xl transition-transform duration-500 hover:scale-103">
+                    <div
+                      className="relative w-64 sm:w-80 md:w-96 aspect-1024/682 mx-auto drop-shadow-2xl transition-transform duration-500 hover:scale-103"
+                      style={{ position: "relative" }}
+                    >
                       <Image
                         src="/images/mascot/mascot-transparent.webp"
                         alt="LIVORA Mascot providing application guidance"

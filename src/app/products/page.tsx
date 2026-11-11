@@ -66,7 +66,10 @@ export default function ProductsPage() {
                     }`}
                   >
                     <Reveal>
-                      <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group">
+                      <div
+                        className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group"
+                        style={{ position: "relative" }}
+                      >
                         <Image
                           src={cat.heroImage}
                           alt={cat.name}

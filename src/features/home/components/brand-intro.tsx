@@ -39,7 +39,10 @@ export function BrandIntro() {
           {/* Left Column: Architectural Imagery */}
           <div className="lg:col-span-5 order-2 lg:order-1">
                 <Reveal direction="left" duration={0.8}>
-                  <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group">
+                  <div
+                    className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group"
+                    style={{ position: "relative" }}
+                  >
                     <Image
                       src="/images/architecture/modern-facade.jpg"
                       alt="Modern architectural construction with precision engineered materials"

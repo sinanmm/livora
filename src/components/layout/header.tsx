@@ -71,7 +71,10 @@ export function Header() {
               className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00504A] rounded-sm"
               aria-label={`${siteConfig.name} Home`}
             >
-              <div className="relative h-9 sm:h-11 w-36 sm:w-44 transition-transform duration-200 group-hover:scale-[1.01]">
+              <div
+                className="relative h-9 sm:h-11 w-36 sm:w-44 transition-transform duration-200 group-hover:scale-[1.01]"
+                style={{ position: "relative" }}
+              >
                 <Image
                   src="/images/brand/livora-logo.png"
                   alt={siteConfig.name}
@@ -220,7 +223,7 @@ export function Header() {
         >
           <div className="space-y-6">
             <div className="flex items-center justify-between pb-4 border-b border-[#DFE3DF]">
-              <div className="relative h-8 w-32">
+              <div className="relative h-8 w-32" style={{ position: "relative" }}>
                 <Image
                   src="/images/brand/livora-logo.png"
                   alt={siteConfig.name}

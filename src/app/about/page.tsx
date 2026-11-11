@@ -53,7 +53,10 @@ export default function AboutPage() {
 
             <div className="lg:col-span-5 relative">
               <Reveal>
-                <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-2xl border border-[#DFE3DF] bg-[#EAECE8]">
+                <div
+                  className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-2xl border border-[#DFE3DF] bg-[#EAECE8]"
+                  style={{ position: "relative" }}
+                >
                   <Image
                     src="/images/architecture/modern-facade.jpg"
                     alt="LIVORA Modern Architecture & Engineering"
