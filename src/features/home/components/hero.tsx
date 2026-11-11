@@ -146,11 +146,6 @@ export function Hero() {
                         Substrate • Hydration • Bond Strength
                       </div>
                     </div>
-                    <div className="text-right">
-                      <span className="inline-block px-2.5 py-1 rounded-xs bg-[#00504A] text-white text-[11px] font-bold">
-                        Grade S1 / C2
-                      </span>
-                    </div>
                   </div>
                 </div>
 
