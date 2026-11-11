@@ -45,7 +45,7 @@ export function TechnicalDifferentiation() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#003C3A] text-white relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 bg-[#003C3A] text-white relative overflow-hidden">
       {/* Subtle background industrial grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#00504A]/50 blur-3xl pointer-events-none" />

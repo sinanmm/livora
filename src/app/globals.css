@@ -26,13 +26,14 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  overflow-x: hidden;
+  overflow-x: clip;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

@@ -61,36 +61,34 @@ export default function ProductsPage() {
                 >
                   {/* Image Column */}
                   <div
-                    className={`lg:col-span-5 ${
-                      isEven ? "lg:order-2" : "lg:order-1"
-                    }`}
+                    className={`lg:col-span-5 ${isEven ? "lg:order-2" : "lg:order-1"
+                      }`}
                   >
                     <Reveal>
-                      <div
-                        className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group"
-                        style={{ position: "relative" }}
-                      >
-                        <Image
-                          src={cat.heroImage}
-                          alt={cat.name}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                          sizes="(max-width: 1024px) 100vw, 40vw"
-                        />
-                        <div className="absolute top-4 left-4">
-                          <span className="px-3 py-1 rounded-xs bg-[#00504A] text-white text-xs font-bold uppercase tracking-wider">
-                            Division 0{index + 1}
-                          </span>
+                        <div
+                          className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-xl border border-[#DFE3DF] bg-[#EAECE8] group"
+                          style={{ position: "relative" }}
+                        >
+                          <Image
+                            src={cat.heroImage}
+                            alt={cat.name}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            sizes="(max-width: 1024px) 100vw, 40vw"
+                          />
+                          <div className="absolute top-4 left-4">
+                            <span className="px-3 py-1 rounded-xs bg-[#00504A] text-white text-xs font-bold uppercase tracking-wider">
+                              Division 0{index + 1}
+                            </span>
+                          </div>
                         </div>
-                      </div>
                     </Reveal>
                   </div>
 
                   {/* Content Column */}
                   <div
-                    className={`lg:col-span-7 space-y-6 ${
-                      isEven ? "lg:order-1" : "lg:order-2"
-                    }`}
+                    className={`lg:col-span-7 space-y-6 ${isEven ? "lg:order-1" : "lg:order-2"
+                      }`}
                   >
                     <Reveal>
                       <span className="text-xs font-bold uppercase tracking-widest text-[#C87535] block">

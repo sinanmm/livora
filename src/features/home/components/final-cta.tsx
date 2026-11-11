@@ -6,7 +6,7 @@ import { ArrowRight, ShieldCheck } from "lucide-react";
 
 export function FinalCta() {
   return (
-    <section className="py-20 sm:py-28 bg-[#003C3A] text-white relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 bg-[#003C3A] text-white relative overflow-hidden">
       {/* Background radial atmosphere */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#00504A]/60 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-16 right-10 w-80 h-80 bg-[#C87535]/10 rounded-full blur-2xl pointer-events-none" />

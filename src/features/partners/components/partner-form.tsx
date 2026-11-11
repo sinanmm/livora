@@ -172,7 +172,7 @@ export function PartnerForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            placeholder="ramesh@company.com"
+            placeholder="yourname@company.com"
             className="w-full px-3.5 py-2.5 rounded-sm bg-[#F6F7F4] border border-[#DFE3DF] text-sm text-[#1D2322] focus:bg-white focus:border-[#00504A] focus:outline-none transition-colors"
           />
         </div>

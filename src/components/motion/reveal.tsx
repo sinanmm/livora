@@ -28,10 +28,10 @@ export function Reveal({
   }
 
   const initialVariants = {
-    up: { opacity: 0, y: 28 },
-    down: { opacity: 0, y: -28 },
-    left: { opacity: 0, x: -28 },
-    right: { opacity: 0, x: 28 },
+    up: { opacity: 0, y: 16 },
+    down: { opacity: 0, y: -16 },
+    left: { opacity: 0, x: -16 },
+    right: { opacity: 0, x: 16 },
     none: { opacity: 0 },
   };
 
@@ -39,7 +39,7 @@ export function Reveal({
     <motion.div
       initial={initialVariants[direction]}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: "some", margin: "0px 0px 80px 0px" }}
       transition={{
         duration,
         delay,
@@ -69,11 +69,11 @@ export function TextReveal({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 22 }}
+      initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-40px" }}
+      viewport={{ once: true, amount: "some", margin: "0px 0px 80px 0px" }}
       transition={{
-        duration: 0.7,
+        duration: 0.65,
         delay,
         ease: [0.22, 1, 0.36, 1],
       }}
@@ -103,11 +103,11 @@ export function CardMotion({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: "some", margin: "0px 0px 80px 0px" }}
       transition={{
-        duration: 0.65,
+        duration: 0.6,
         delay,
         ease: [0.16, 1, 0.3, 1],
       }}
@@ -145,7 +145,7 @@ export function StaggerContainer({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: "some", margin: "0px 0px 80px 0px" }}
       variants={{
         hidden: {},
         visible: {
@@ -179,12 +179,12 @@ export function StaggerItem({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 32 },
+        hidden: { opacity: 0, y: 16 },
         visible: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.65,
+            duration: 0.6,
             ease: [0.16, 1, 0.3, 1],
           },
         },

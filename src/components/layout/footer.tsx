@@ -17,14 +17,14 @@ export function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-5">
             <Link href="/" className="inline-block" aria-label={siteConfig.name}>
-              <div className="relative h-10 w-44" style={{ position: "relative" }}>
-                <Image
-                  src="/images/brand/livora-logo-white.png"
-                  alt={siteConfig.name}
-                  fill
-                  className="object-contain object-left"
-                />
-              </div>
+                <div className="relative h-10 w-44" style={{ position: "relative" }}>
+                  <Image
+                    src="/images/brand/livora-logo-white.png"
+                    alt={siteConfig.name}
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
             </Link>
 
             <p className="text-white/80 text-sm leading-relaxed max-w-sm">

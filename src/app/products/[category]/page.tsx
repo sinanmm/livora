@@ -153,21 +153,21 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
             </div>
 
             <div className="lg:col-span-5 relative">
-              <div
-                className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-[#DFE3DF] bg-[#EAECE8]"
-                style={{ position: "relative" }}
-              >
-                <Image
-                  src={category.heroImage}
-                  alt={category.name}
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
+                <div
+                  className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-[#DFE3DF] bg-[#EAECE8]"
+                  style={{ position: "relative" }}
+                >
+                  <Image
+                    src={category.heroImage}
+                    alt={category.name}
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
+                </div>
               </div>
             </div>
-          </div>
         </Reveal>
       </Container>
 

@@ -46,7 +46,7 @@ export function ApplicationsGrid() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-white border-b border-[#DFE3DF]">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white border-b border-[#DFE3DF]">
       <Container size="wide">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <SectionHeading

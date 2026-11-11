@@ -25,7 +25,7 @@ export function PartnershipsHighlight() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#F6F7F4] border-b border-[#DFE3DF]">
+    <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] border-b border-[#DFE3DF]">
       <Container size="wide">
         <div className="bg-[#003C3A] text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl border border-white/10">
 

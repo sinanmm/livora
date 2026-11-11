@@ -22,7 +22,7 @@ export function ClimaticResearch() {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-[#F6F7F4] border-b border-[#DFE3DF]">
+    <section className="py-12 sm:py-20 lg:py-24 bg-[#F6F7F4] border-b border-[#DFE3DF]">
       <Container size="wide">
         <Reveal>
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 sm:mb-16 gap-6">
