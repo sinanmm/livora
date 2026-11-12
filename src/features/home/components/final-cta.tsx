@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Reveal, TextReveal } from "@/components/motion/reveal";
@@ -13,6 +14,16 @@ export function FinalCta() {
 
         <Container size="default" className="relative z-10 text-center">
           <Reveal>
+            <div className="w-28 sm:w-36 h-28 sm:h-36 mx-auto mb-5 relative drop-shadow-2xl" style={{ position: "relative" }}>
+              <Image
+                src="/images/mascot/mascot-kneeling-thumbs.webp"
+                alt="LIVORA Mascot ready to assist with construction chemical projects"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 112px, 144px"
+              />
+            </div>
+
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xs bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-[#C87535] mb-6">
               <ShieldCheck className="w-4 h-4" />
               Smart Solutions. Stronger Structures.

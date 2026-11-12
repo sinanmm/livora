@@ -75,15 +75,15 @@ export function MascotShowcase() {
               <div className="lg:col-span-5 relative flex flex-col items-center">
                 <Reveal direction="up" duration={0.8}>
                   <div
-                    className="relative w-64 sm:w-80 md:w-96 aspect-1024/682 mx-auto drop-shadow-2xl transition-transform duration-500 hover:scale-103"
+                    className="relative h-72 sm:h-88 md:h-96 aspect-609/1024 mx-auto drop-shadow-2xl transition-transform duration-500 hover:scale-103"
                     style={{ position: "relative" }}
                   >
                     <Image
-                      src="/images/mascot/mascot-transparent.webp"
-                      alt="LIVORA Mascot providing application guidance"
+                      src="/images/mascot/mascot-thinking.webp"
+                      alt="LIVORA Mascot analyzing chemical formulation and substrate mechanics"
                       fill
                       className="object-contain"
-                      sizes="(max-width: 640px) 256px, 384px"
+                      sizes="(max-width: 640px) 240px, 320px"
                     />
                   </div>
                 </Reveal>

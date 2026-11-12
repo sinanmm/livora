@@ -1,8 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { StaggerContainer, StaggerItem } from "@/components/motion/reveal";
-import { Cpu, FlaskConical, Wrench, Handshake } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { StaggerContainer, StaggerItem, Reveal } from "@/components/motion/reveal";
+import { Cpu, FlaskConical, Wrench, Handshake, ArrowRight } from "lucide-react";
 
 export function TechnicalDifferentiation() {
   const strengths = [
@@ -102,6 +104,40 @@ export function TechnicalDifferentiation() {
               );
             })}
           </StaggerContainer>
+
+          {/* Engineering Assurance Banner with Arms-Crossed Mascot */}
+          <Reveal delay={0.2}>
+            <div className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-3xl bg-[#00504A]/60 border border-white/15 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+              <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 shrink-0 drop-shadow-2xl" style={{ position: "relative" }}>
+                  <Image
+                    src="/images/mascot/mascot-arms-crossed.webp"
+                    alt="LIVORA Mascot standing confident with arms crossed"
+                    fill
+                    className="object-contain"
+                    sizes="112px"
+                  />
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-wider text-[#C87535] mb-1">
+                    Quality Benchmarks & Batch Purity
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-bold text-white">
+                    Zero Batch Compromises. Verified Tensile Adhesion.
+                  </h4>
+                  <p className="text-xs sm:text-sm text-white/80 mt-1 max-w-xl">
+                    Every formulation is manufactured under calibrated polymer-to-cement ratios to resist climatic extremes, shear stress, and premature debonding.
+                  </p>
+                </div>
+              </div>
+              <div className="shrink-0">
+                <Button href="/research-development" variant="outline-white" size="sm">
+                  <span>Explore R&D Facilities</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Button>
+              </div>
+            </div>
+          </Reveal>
         </Container>
       </section>
       );

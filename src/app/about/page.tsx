@@ -301,13 +301,13 @@ export default function AboutPage() {
       <section className="py-16 bg-[#F6F7F4]">
         <Container size="narrow" className="text-center">
           <Reveal>
-            <div className="w-48 sm:w-56 aspect-1024/682 mx-auto drop-shadow-lg mb-4">
+            <div className="w-40 sm:w-48 h-56 sm:h-64 mx-auto relative drop-shadow-xl mb-4" style={{ position: "relative" }}>
               <Image
-                src="/images/mascot/mascot-transparent.webp"
-                alt="LIVORA Mascot"
-                width={300}
-                height={200}
+                src="/images/mascot/mascot-hands-on-hips.webp"
+                alt="LIVORA Mascot standing proud with hands on hips"
+                fill
                 className="object-contain"
+                sizes="(max-width: 640px) 160px, 192px"
               />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2322]">

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Reveal, StaggerContainer, StaggerItem, TextReveal } from "@/components/motion/reveal";
@@ -62,6 +63,27 @@ export function PartnershipsHighlight() {
                     <Button href="/contact?type=Business+Partnership" variant="outline-white" size="lg">
                       Speak with Channel Team
                     </Button>
+                  </div>
+                </Reveal>
+
+                {/* Mascot Partnership Callout */}
+                <Reveal delay={0.25}>
+                  <div className="pt-2 flex items-center gap-4">
+                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 shrink-0 drop-shadow-xl" style={{ position: "relative" }}>
+                      <Image
+                        src="/images/mascot/mascot-pointing.webp"
+                        alt="LIVORA Mascot inviting commercial partners"
+                        fill
+                        className="object-contain"
+                        sizes="96px"
+                      />
+                    </div>
+                    <div className="text-xs text-white/90 bg-white/10 p-3 rounded-xl border border-white/15 max-w-md">
+                      <span className="font-bold text-[#C87535] uppercase tracking-wider block mb-0.5">
+                        Direct Factory Alliance
+                      </span>
+                      Join hands with a performance brand built on ethical terms, zero batch compromises, and complete applicator backing.
+                    </div>
                   </div>
                 </Reveal>
               </div>

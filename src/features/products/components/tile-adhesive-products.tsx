@@ -60,6 +60,47 @@ export function TileAdhesiveProducts() {
           </div>
         </Reveal>
 
+        {/* On-site Technical Application Banner with Active Mascot */}
+        <Reveal delay={0.1}>
+          <div className="mb-12 rounded-3xl bg-linear-to-r from-[#00504A] to-[#003C3A] text-white p-6 sm:p-8 relative overflow-hidden shadow-xl border border-[#00504A]">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              <div className="md:col-span-8 space-y-3">
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-xs bg-white/10 text-[11px] font-bold uppercase tracking-wider text-[#C87535]">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  Method of Application
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold font-heading">
+                  Precision Bedding with Controlled Polymer Hydration
+                </h3>
+                <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-xl">
+                  Always use the recommended notch size (6×6 mm or 10×10 mm) for 100% adhesive transfer. Back-butter large-format porcelain slabs and verify open time before embedding.
+                </p>
+                <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-emerald-200">
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C87535]" />
+                    Zero Slump on Vertical Facades
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C87535]" />
+                    S1 Deformable Deflection Tested
+                  </span>
+                </div>
+              </div>
+              <div className="md:col-span-4 flex justify-center md:justify-end">
+                <div className="relative w-44 sm:w-52 h-44 sm:h-52 drop-shadow-2xl" style={{ position: "relative" }}>
+                  <Image
+                    src="/images/mascot/mascot-troweling-cutout.webp"
+                    alt="LIVORA Mascot demonstrating notched trowel adhesive installation"
+                    fill
+                    className="object-contain"
+                    sizes="208px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
         {/* 3 Products Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {tileAdhesivesProducts.map((product, index) => {
